@@ -2,7 +2,7 @@ body{
 	font-family: Lucida Calligraphy;
 }
 footer {
-      background-color: #6E0001;
+      background-color: #98FB98;
     }
     #logo{
     	position: relative;
@@ -45,7 +45,7 @@ animation-direction: alternate;
 }
 
     nav.n{
-background: #6E0001;
+background: black;
 text-align: right; 
 width: 1348px;
 display: inline-block;
@@ -74,12 +74,12 @@ text-decoration: none;
 color: black;
 }
 nav{
-background:#98FB98;
+background:white;
 width: 180px;
 text-align: left;
 }
 nav.p{
-background: #6E0001;
+background: white;
 width: 950px;
 text-align: left;
 clear: both;
@@ -133,11 +133,12 @@ margin: 0px -2px;
 	}
 
 	#Lista li a{
-		background: #6E0001;
+		background: grey ;
 		color: white;
 		text-decoration: none;
-		padding:10px 15px;
+		padding:10px 116.5px;
 		display: block;
+		width: 100%;
 	}
 
 	#Lista > li{
@@ -145,7 +146,7 @@ margin: 0px -2px;
 	}
 
 	#Lista li a:hover{
-		background: #B0C4DE;
+		background: pink;
 	}
 
 	#Lista li ul{

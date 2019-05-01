@@ -3,8 +3,14 @@
 <head>
 	<title>Centros de mesa</title>
 		<link rel="stylesheet" type="text/css" href="Tablas.css">
+
+
+          <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+     <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <script type="text/javascript" src="js/modernizr.custom.46884.js"></script>
 </head>
-<body background="48.jpg">
+<body>
 		<nav class="n">
 			<ul id="Lista">
 				<li class="espe"><a href="https://es-la.facebook.com/" >Centros de mesa</a>
@@ -55,22 +61,129 @@
       <hr>
 </div>
 <br>
-<div class="interior"><h1 class="especifico">Bordados centros de mesa</h1>
-  <br>
-		<ul>
+<div class="container">
 
-			<li><img src="Flor.jpg" alt=""></li>
-			<li><img src="Florr.jpg" alt=""></li>
-			<li><img src="Claveles.jpg" alt=""></li>
-			<li><img src="Girasol.jpg" alt=""></li>
-			<li><img src="NocheBuena.jpg""></li>
-		</ul>
-	</div>
+    
+
+      <h1 class="HH">Tortilleros de fruta <span>A fresh 3D image slider with graceful fallback</span></h1>
+      
+      
+
+      <div class="wrapper">
+
+        <ul id="sb-slider" class="sb-slider">
+          <li>
+            <a href="#" target="_blank"><img src="E:\Alonso\Alonso\Aplicaciones Web\2doParcial\yo\startbootstrap-modern-business-gh-pages\IMG-20190425-WA0024.jpg" alt="image1"/></a>
+            <div class="sb-description">
+              <h3>Mango</h3>
+            </div>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="E:\Alonso\Alonso\Aplicaciones Web\2doParcial\yo\startbootstrap-modern-business-gh-pages\IMG-20190425-WA0031.jpg" alt="image1"/></a>
+            <div class="sb-description">
+              <h3>Manzana</h3>
+            </div>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="E:\Alonso\Alonso\Aplicaciones Web\2doParcial\yo\startbootstrap-modern-business-gh-pages\Naranja.jpg" alt="image1"/></a>
+            <div class="sb-description">
+              <h3>Naranja</h3>
+            </div>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="E:\Alonso\Alonso\Aplicaciones Web\2doParcial\yo\startbootstrap-modern-business-gh-pages\IMG-20190425-WA0030.jpg" alt="image1"/></a>
+            <div class="sb-description">
+              <h3>Durazno</h3>
+            </div>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="E:\Alonso\Alonso\Aplicaciones Web\2doParcial\yo\startbootstrap-modern-business-gh-pages\IMG-20190425-WA0028.jpg" alt="image1"/></a>
+            <div class="sb-description">
+              <h3>Pera</h3>
+            </div>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="E:\Alonso\Alonso\Aplicaciones Web\2doParcial\yo\startbootstrap-modern-business-gh-pages\IMG-20190425-WA0027.jpg" alt="image1"/></a>
+            <div class="sb-description">
+              <h3>Piña, cerezas y sandia</h3>
+            </div>
+          </li>
+          <li>
+            <a href="#" target="_blank"><img src="E:\Alonso\Alonso\Aplicaciones Web\2doParcial\yo\startbootstrap-modern-business-gh-pages\Fruta2.jpg" alt="image1"/></a>
+            <div class="sb-description">
+              <h3>Lima y frambuesa</h3>
+            </div>
+          </li>
+        </ul>
+
+        <div id="shadow" class="shadow"></div>
+
+        <div id="nav-arrows" class="nav-arrows">
+          <a href="#">Next</a>
+          <a href="#">Previous</a>
+        </div>
+
+      </div><!-- /wrapper -->
+
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slicebox.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        
+        var Page = (function() {
+
+          var $navArrows = $( '#nav-arrows' ).hide(),
+            $shadow = $( '#shadow' ).hide(),
+            slicebox = $( '#sb-slider' ).slicebox( {
+              onReady : function() {
+
+                $navArrows.show();
+                $shadow.show();
+
+              },
+              orientation : 'r',
+              cuboidsRandom : true
+            } ),
+            
+            init = function() {
+
+              initEvents();
+              
+            },
+            initEvents = function() {
+
+              // add navigation events
+              $navArrows.children( ':first' ).on( 'click', function() {
+
+                slicebox.next();
+                return false;
+
+              } );
+
+              $navArrows.children( ':last' ).on( 'click', function() {
+                
+                slicebox.previous();
+                return false;
+
+              } );
+
+            };
+
+            return { init : init };
+
+        })();
+
+        Page.init();
+
+      });
+    </script>
+  </div>
   <br>
   <br>
 
     <!-- Footer -->
-  <footer style="background-color: #6E0001; text-decoration:none;color: white;" class="container text-center" >
+  <footer style="background-color: grey; text-decoration:none;color: white;" class="container text-center" >
   <a name="contacto1"><h5 style="text-decoration: none; color: white">Acerca de nosotras</h5></a>
   <br>
 <article>
@@ -86,14 +199,14 @@
     
    <article class="col-sm-3">
 
-      <h5>Diseño por Ana y Elena Córdova Flores
+      <h5 style="text-decoration: none; color: white">Diseño por Ana y Elena Córdova Flores
     <br>
     <br>
     Elaborado por Ana y Elena Córdova Flores
   </h5>
     </article>
        <article class="col-sm-3">
-<h5>
+<h5 style="text-decoration: none; color: white">
   Todos los derechos reservados © <strong>2019 Any y Ele</strong>
 </h5>
     </article>
